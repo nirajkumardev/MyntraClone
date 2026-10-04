@@ -18,7 +18,7 @@ const FetchinItems = () => {
 
     dispatch(FectchAction.markFetchigStarted());
 
-    fetch("http://localhost:8080/items", { signal })
+    fetch("https://myntraclone-oz3a.onrender.com/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(FectchAction.markFetchdone());
